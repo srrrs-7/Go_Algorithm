@@ -12,6 +12,7 @@ func binarySearch(arr []int, findNum int) (result bool) {
 
 	low := 0
 	high := len(arr) - 1
+
 	for low <= high {
 		mid := (low + high) / 2
 		if  findNum > arr[mid]{
@@ -24,6 +25,7 @@ func binarySearch(arr []int, findNum int) (result bool) {
 			return true
 		}
 	}
+
 	return false
 }
 
@@ -31,5 +33,5 @@ func BinarySearch() {
 	arr := []int{3,5,7,1,2,32,3,5,9}
 	findNum := 5
 	res := binarySearch(arr, findNum)
-	fmt.Println(res)
+	fmt.Println("binary sort: ", res)
 }
