@@ -1,4 +1,4 @@
-package algorithm
+package leetcode
 
 func SelfCrossing() {
 	selfCrossing()
