@@ -4,7 +4,7 @@ import (
 	"github.com/sRRRs-7/Go_Algorithm.git/algorithm"
 	"github.com/sRRRs-7/Go_Algorithm.git/colly"
 	"github.com/sRRRs-7/Go_Algorithm.git/leetcode"
-	staticanalizer "github.com/sRRRs-7/Go_Algorithm.git/static_analizer"
+	analyzer "github.com/sRRRs-7/Go_Algorithm.git/staticAnalizer"
 )
 
 func main() {
@@ -16,6 +16,7 @@ func main() {
 	// leetcode
 	leetcode.ReverseWords()
 	leetcode.SelfCrossing()
+	leetcode.AggregateComponent()
 	// staticAnalyzer
-	staticanalizer.StaticAnalyzer()
+	analyzer.StaticAnalyzer()
 }

@@ -11,3 +11,9 @@ func BenchmarkReverseWords(b *testing.B) {
 		leetcode.ReverseWords()
 	}
 }
+
+func BenchmarkAggregateComponent(b *testing.B) {
+	for i:=0; i<b.N; i++ {
+		leetcode.AggregateComponent()
+	}
+}
