@@ -38,6 +38,7 @@ func distinct[T string | int](arr []T) (unique []T) {
 			unique = append(unique, v)
 		}
 	}
+	fmt.Println(unique)
 	return unique
 
 }

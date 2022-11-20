@@ -5,7 +5,6 @@ import (
 	"github.com/sRRRs-7/Go_Algorithm.git/colly"
 	"github.com/sRRRs-7/Go_Algorithm.git/leetcode"
 	analyzer "github.com/sRRRs-7/Go_Algorithm.git/staticAnalizer"
-	"github.com/sRRRs-7/Go_Algorithm.git/utils"
 )
 
 func main() {
@@ -20,8 +19,6 @@ func main() {
 	leetcode.SelfCrossing()
 	leetcode.AggregateComponent()
 	leetcode.TotalAppealString()
-	// utils
-	utils.BaseNumberConvert()
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 }
