@@ -2,7 +2,6 @@ package utils
 
 import (
 	"fmt"
-	"strconv"
 )
 
 func BaseNumberConvert() {
@@ -13,7 +12,7 @@ func BaseNumberConvert() {
 	fmt.Println("convert base number", res)
 }
 
-func baseNumberConvert(num, base int) int {
+func baseNumberConvert(num, base int) []int {
 	remainder := 0
 	quotient := 0
 	results := []int{}
@@ -33,16 +32,7 @@ func baseNumberConvert(num, base int) int {
 		results[i], results[j] = results[j], results[i]
 	}
 
-	st := ""
-	for _, i := range results {
-		s := strconv.Itoa(i)
-		st += s
-	}
+	st := string(results[0:])
 
-	res, err := strconv.Atoi(st)
-	if err != nil {
-		return -1
-	}
-
-	return res
+	return
 }

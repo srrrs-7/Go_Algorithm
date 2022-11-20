@@ -44,5 +44,5 @@ func baseNumberConvert(num, base int) int {
 		return -1
 	}
 
-	return res
+	return
 }
