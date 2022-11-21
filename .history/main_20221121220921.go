@@ -24,7 +24,6 @@ func main() {
 	// utils
 	utils.BaseNumberConvert()
 	utils.ArrayToInteger()
-	utils.StringContains()
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 }

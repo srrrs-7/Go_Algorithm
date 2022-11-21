@@ -1,6 +1,6 @@
 MAKEFILE_DIR = $(dir $(lastword $(MAKEFILE_LIST)))
 
-run:
+main:
 	go run main.go
 
 benchmark:
