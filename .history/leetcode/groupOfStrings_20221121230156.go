@@ -12,7 +12,7 @@ func GroupOfStrings() {
 }
 
 func groupOfStrings(words []string) [2]int {
-	res := [2]int{0, 0} // [ divide number, max length group ]
+	res := [2]int{0, 0} // [divide number, max length group]
 	maxLen := 0
 	div := 0
 
