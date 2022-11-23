@@ -8,8 +8,6 @@ import (
 	"github.com/sRRRs-7/Go_Algorithm.git/utils"
 )
 
-const is_io = false
-
 func main() {
 	colly.Scraping()
 	// algorithm
@@ -29,7 +27,6 @@ func main() {
 	utils.ArrayToInteger()
 	utils.StringContains()
 	utils.SequenceArray()
-	if is_io { utils.Io() } // if you execute this function, is_io change true
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 }

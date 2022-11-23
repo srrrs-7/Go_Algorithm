@@ -29,7 +29,7 @@ func main() {
 	utils.ArrayToInteger()
 	utils.StringContains()
 	utils.SequenceArray()
-	if is_io { utils.Io() } // if you execute this function, is_io change true
+	if is_io { utils.Io() }
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 }

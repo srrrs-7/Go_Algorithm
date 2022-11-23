@@ -1,0 +1,42 @@
+package utils
+
+import (
+	"flag"
+	"fmt"
+	"os"
+)
+
+func Io() {
+	setIo()
+	setFlag()
+}
+
+func setIo() {
+	w := os.Stdout
+	fmt.Println(w)
+}
+
+
+const args = 1
+func setScan() {
+	fmt.Printf("input string %d: ", args)
+	var s [args]string
+	for i := 0; i < args; i++ {
+		fmt.Scan(&s)
+	}
+	fmr.Printf("%d", s)
+}
+
+// go run main.go -x 2 -y 3
+func setFlag() {
+	args := os.Args[1:]
+
+	var x, y int
+
+	flags := flag.NewFlagSet("args", flag.ContinueOnError)
+	flags.IntVar(&x, "x", 0, "input x number")
+	flags.IntVar(&y, "y", 0, "input y number")
+	flags.Parse(args)
+
+	fmt.Printf("x: %d, y: %d \n", x, y)
+}
