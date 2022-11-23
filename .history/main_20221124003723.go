@@ -9,7 +9,6 @@ import (
 )
 
 const is_io = false
-const is_leet = true
 
 func main() {
 	colly.Scraping()
@@ -25,17 +24,13 @@ func main() {
 	leetcode.TotalAppealString()
 	leetcode.GroupOfStrings()
 	leetcode.CountIdealArray()
-	if is_leet {
-		leetcode.CutCake()
-	}
+	leetcode.CutCake()
 	// utils
 	utils.BaseNumberConvert()
 	utils.ArrayToInteger()
 	utils.StringContains()
 	utils.SequenceArray()
-	if is_io {
-		utils.Io() // if you execute this function, is_io change true
-	}
+	if is_io { utils.Io() } // if you execute this function, is_io change true
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 }

@@ -10,7 +10,4 @@ pprof:
 	go tool pprof
 
 debug:
-	dlv debug main.go
-
-dlvhelp:
-	dlv help
+	dlv debug main

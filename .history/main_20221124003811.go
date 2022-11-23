@@ -9,7 +9,7 @@ import (
 )
 
 const is_io = false
-const is_leet = true
+const is_leet = false
 
 func main() {
 	colly.Scraping()

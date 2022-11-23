@@ -11,6 +11,3 @@ pprof:
 
 debug:
 	dlv debug main.go
-
-dlvhelp:
-	dlv help
