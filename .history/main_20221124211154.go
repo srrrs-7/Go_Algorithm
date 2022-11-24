@@ -12,6 +12,7 @@ const is_io = false
 const is_leet = true
 
 func main() {
+	colly.Scraping()
 	// algorithm
 	algorithm.BinarySearch()
 	algorithm.EuclidMethod()
@@ -24,11 +25,9 @@ func main() {
 	leetcode.TotalAppealString()
 	leetcode.GroupOfStrings()
 	leetcode.CountIdealArray()
-	//atCorder
 	if is_leet {
 		atCorder.CutCake()
 	}
-	atCorder.Parenthesis()
 	// utils
 	utils.BaseNumberConvert()
 	utils.ArrayToInteger()

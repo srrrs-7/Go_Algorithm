@@ -24,11 +24,9 @@ func main() {
 	leetcode.TotalAppealString()
 	leetcode.GroupOfStrings()
 	leetcode.CountIdealArray()
-	//atCorder
 	if is_leet {
 		atCorder.CutCake()
 	}
-	atCorder.Parenthesis()
 	// utils
 	utils.BaseNumberConvert()
 	utils.ArrayToInteger()
