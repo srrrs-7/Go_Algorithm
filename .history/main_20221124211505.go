@@ -28,7 +28,7 @@ func main() {
 	if is_leet {
 		atCorder.CutCake()
 	}
-	atCorder.Parenthesis()
+	atCorder.Parenthesis
 	// utils
 	utils.BaseNumberConvert()
 	utils.ArrayToInteger()
