@@ -23,9 +23,8 @@ func parenthesis(brackets string) bool {
 			return false
 		}
 	}
-	if cnt != 0 {
-		return false
-	} else {
+	if cnt != 0 {return false}
 		return true
+
 	}
 }

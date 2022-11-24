@@ -17,15 +17,15 @@ func parenthesis(brackets string) bool {
 		case "(" :
 			cnt += 1
 		case ")":
-			if cnt <= 0 { return false }
+			if cnt == 0 { return false }
 			cnt -= 1
 		default:
 			return false
 		}
 	}
-	if cnt != 0 {
-		return false
-	} else {
+	if cnt == 0 {
 		return true
+	} else {
+		return false
 	}
 }

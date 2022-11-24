@@ -3,29 +3,29 @@ package atCorder
 import "fmt"
 
 func Parenthesis() {
-	brackets := "(()))"
+	brackets := "((()))((()))(())()"
 
 	res := parenthesis(brackets)
 	fmt.Println("parenthesis", res)
 }
 
 func parenthesis(brackets string) bool {
-	cnt := 0
+	arr := []string{}
 
 	for _, b := range brackets {
 		switch string(b) {
 		case "(" :
-			cnt += 1
+			arr = append(arr, string(b))
 		case ")":
-			if cnt <= 0 { return false }
-			cnt -= 1
+			if len(arr) == 0 { return false }
+			arr = arr[0 : len(arr)-1]
 		default:
 			return false
 		}
 	}
-	if cnt != 0 {
-		return false
-	} else {
+	if len(arr) == 0 {
 		return true
+	} else {
+		return false
 	}
 }
