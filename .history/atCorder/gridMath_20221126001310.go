@@ -1,0 +1,3 @@
+package atCorder
+
+func GridMath() {}
