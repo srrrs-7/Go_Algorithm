@@ -16,7 +16,7 @@ func GridMath() {
 }
 
 func gridMath(grid [5][5]int) [5][5]int {
-	sumGrid := grid
+	var sumGrid = sgrid
 
 	for i, r := range grid {
 		for ii := range r {

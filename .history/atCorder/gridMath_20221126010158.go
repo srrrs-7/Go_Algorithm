@@ -3,7 +3,7 @@ package atCorder
 import "fmt"
 
 func GridMath() {
-	grid := [5][5]int{
+	grid := [][]int{
 		{1,2,3,4,5},
 		{1,2,3,4,5},
 		{1,2,3,4,5},
@@ -15,8 +15,8 @@ func GridMath() {
 	fmt.Println("grid sum: ", res)
 }
 
-func gridMath(grid [5][5]int) [5][5]int {
-	sumGrid := grid
+func gridMath(grid [][]int) [][]int {
+	sumGrid := [][]int{}
 
 	for i, r := range grid {
 		for ii := range r {

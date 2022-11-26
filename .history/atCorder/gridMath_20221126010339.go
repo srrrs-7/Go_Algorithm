@@ -15,8 +15,8 @@ func GridMath() {
 	fmt.Println("grid sum: ", res)
 }
 
-func gridMath(grid [5][5]int) [5][5]int {
-	sumGrid := grid
+func gridMath(grid [][]int) [5][5]int {
+	var sumGrid = [5][5]int{}
 
 	for i, r := range grid {
 		for ii := range r {
