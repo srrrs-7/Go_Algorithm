@@ -32,7 +32,7 @@ func VerifyHash(password, hashPassword string) error {
 	if password != hashPassword {
 		return fmt.Errorf("verify password and hashPassword error")
 	}
-	if []byte(password)[7] != []byte(hashPassword)[7] {
+	if []byte(password)[7] != []byte(hashPassword)[3] {
 		return fmt.Errorf("verify password and hashPassword error")
 	}
 	return nil
