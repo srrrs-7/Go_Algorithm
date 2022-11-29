@@ -3,7 +3,7 @@ package atCorder
 import "fmt"
 
 func Dp() {
-	n := []int{1,2,3,4,5,6,7,8,9}
+	n := []int{1, 2, 3}
 	req := 7
 
 	res := dp(n, req)
