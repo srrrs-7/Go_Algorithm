@@ -24,17 +24,14 @@ func RegexFunc() {
 
 	// string retrieve
 	fmt.Println("regex retrieve: ", regexRetriever(`[\d\-]+`, "hoge:1234-1234-1234 asda:1234-2341-1342"))	// find all regex
-
-	result := regexRetriever(`(\S+):([\d\-]+)`, "hoge:1234-1234-1234 asda:1234-2341-1342")
+	result := regexRetriever(`(\S+):[\d\-]+`, "hoge:1234-1234-1234 asda:1234-2341-1342")
 	fmt.Println("regex retrieve: ", result[0], result[1])	// find all regex
 }
 
-// contain?
 func checkRegex(reg, s string) bool {
 	return regexp.MustCompile(reg).Match([]byte(s))
 }
 
-// string retriever
 func regexRetriever(reg, s string) [][]string {
 	return regexp.MustCompile(reg).FindAllStringSubmatch(s, -1)
 }

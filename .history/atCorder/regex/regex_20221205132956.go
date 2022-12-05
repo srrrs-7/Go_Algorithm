@@ -34,7 +34,6 @@ func checkRegex(reg, s string) bool {
 	return regexp.MustCompile(reg).Match([]byte(s))
 }
 
-// string retriever
 func regexRetriever(reg, s string) [][]string {
 	return regexp.MustCompile(reg).FindAllStringSubmatch(s, -1)
 }

@@ -29,12 +29,10 @@ func RegexFunc() {
 	fmt.Println("regex retrieve: ", result[0], result[1])	// find all regex
 }
 
-// contain?
 func checkRegex(reg, s string) bool {
 	return regexp.MustCompile(reg).Match([]byte(s))
 }
 
-// string retriever
 func regexRetriever(reg, s string) [][]string {
-	return regexp.MustCompile(reg).FindAllStringSubmatch(s, -1)
+	return regexp.MustCompile(reg).FindAllStringSubmatch(s, 1)
 }
