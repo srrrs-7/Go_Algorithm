@@ -3,7 +3,6 @@ package main
 import (
 	"github.com/sRRRs-7/Go_Algorithm.git/algorithm"
 	"github.com/sRRRs-7/Go_Algorithm.git/atCorder"
-	"github.com/sRRRs-7/Go_Algorithm.git/atCorder/regex"
 	"github.com/sRRRs-7/Go_Algorithm.git/leetcode"
 	analyzer "github.com/sRRRs-7/Go_Algorithm.git/staticAnalizer"
 	"github.com/sRRRs-7/Go_Algorithm.git/utils"
@@ -44,5 +43,4 @@ func main() {
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 	// regex
-	regex.RegexFunc()
 }

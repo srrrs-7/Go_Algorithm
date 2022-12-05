@@ -31,5 +31,6 @@ func dp(n []int, req int) int {
 			}
 		}
 	}
+	fmt.Println(dp)
 	return dp[l][0][1] + dp[l][1][1]
 }
