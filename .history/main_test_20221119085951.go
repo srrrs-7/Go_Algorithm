@@ -7,19 +7,13 @@ import (
 )
 
 func BenchmarkReverseWords(b *testing.B) {
-	for i := 0; i < b.N; i++ {
+	for i:=0; i<b.N; i++ {
 		leetcode.ReverseWords()
 	}
 }
 
 func BenchmarkAggregateComponent(b *testing.B) {
-	for i := 0; i < b.N; i++ {
+	for i:=0; i<b.N; i++ {
 		leetcode.AggregateComponent()
-	}
-}
-
-func BenchmarkMinimumCostAve(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		leetcode.MinimumCostAve()
 	}
 }

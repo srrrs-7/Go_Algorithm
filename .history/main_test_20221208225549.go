@@ -18,8 +18,8 @@ func BenchmarkAggregateComponent(b *testing.B) {
 	}
 }
 
-func BenchmarkMinimumCostAve(b *testing.B) {
+func BenchmarkAggregateComponent(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		leetcode.MinimumCostAve()
+		leetcode.AggregateComponent()
 	}
 }

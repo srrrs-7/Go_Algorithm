@@ -8,7 +8,7 @@ func MinimumCostAve() {
 	nums := []int{2, 2, 2, 2}
 	costs := []int{2, 3, 1, 14}
 
-	_ = minimumCostAve(nums, costs)
+	_ := minimumCostAve(nums, costs)
 }
 
 func minimumCostAve(nums []int, costs []int) int {
