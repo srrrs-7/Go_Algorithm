@@ -4,7 +4,6 @@ import (
 	"github.com/sRRRs-7/Go_Algorithm.git/algorithm"
 	"github.com/sRRRs-7/Go_Algorithm.git/atCorder"
 	"github.com/sRRRs-7/Go_Algorithm.git/leetcode"
-	"github.com/sRRRs-7/Go_Algorithm.git/regex"
 	analyzer "github.com/sRRRs-7/Go_Algorithm.git/staticAnalizer"
 	"github.com/sRRRs-7/Go_Algorithm.git/utils"
 )
@@ -25,7 +24,6 @@ func main() {
 	leetcode.TotalAppealString()
 	leetcode.GroupOfStrings()
 	leetcode.CountIdealArray()
-	leetcode.MinimumCostAve()
 	//atCorder
 	if is_leet {
 		atCorder.CutCake()

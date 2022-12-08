@@ -25,7 +25,6 @@ func main() {
 	leetcode.TotalAppealString()
 	leetcode.GroupOfStrings()
 	leetcode.CountIdealArray()
-	leetcode.MinimumCostAve()
 	//atCorder
 	if is_leet {
 		atCorder.CutCake()
