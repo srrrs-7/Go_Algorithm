@@ -29,7 +29,6 @@ func main() {
 	leetcode.SubSequence()
 	leetcode.MatchStr()
 	leetcode.MaxDot()
-	leetcode.LongestPrefix()
 	//atCorder
 	if is_leet {
 		atCorder.CutCake()
