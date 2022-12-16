@@ -10,7 +10,7 @@ import (
 )
 
 const is_io = false
-const is_leet = false
+const is_leet = true
 
 func main() {
 	// algorithm
@@ -43,15 +43,12 @@ func main() {
 	utils.StringContains()
 	utils.SequenceArray()
 	utils.MultiThread()
-	utils.Contains()
-	utils.Cipher()
-	utils.ConvertBase64()
 	if is_io {
 		utils.Io() // if you execute this function, is_io change true
 	}
+	utils.Cipher()
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 	// regex
 	regex.RegexFunc()
-
 }

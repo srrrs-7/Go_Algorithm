@@ -20,4 +20,5 @@ func distinct[T string | int](arr []T) (unique []T) {
 	}
 
 	return unique
+
 }

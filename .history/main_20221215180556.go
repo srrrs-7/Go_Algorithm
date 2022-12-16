@@ -1,6 +1,9 @@
 package main
 
 import (
+	"fmt"
+	"time"
+
 	"github.com/sRRRs-7/Go_Algorithm.git/algorithm"
 	"github.com/sRRRs-7/Go_Algorithm.git/atCorder"
 	"github.com/sRRRs-7/Go_Algorithm.git/leetcode"
@@ -43,15 +46,14 @@ func main() {
 	utils.StringContains()
 	utils.SequenceArray()
 	utils.MultiThread()
-	utils.Contains()
-	utils.Cipher()
-	utils.ConvertBase64()
 	if is_io {
 		utils.Io() // if you execute this function, is_io change true
 	}
+	utils.Cipher()
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 	// regex
 	regex.RegexFunc()
 
+	fmt.Println(time.Now())
 }
