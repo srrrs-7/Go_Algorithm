@@ -1,0 +1,21 @@
+MAKEFILE_DIR = $(dir $(lastword $(MAKEFILE_LIST)))
+
+run:
+	go run main.go
+
+benchmark:
+	go test -bench=. -benchmem
+
+pprof:
+	go tool pprof
+
+debug:
+	dlv debug main.go
+
+dlvhelp:
+	dlv help
+
+mecab:
+	export CGO_LDFLAGS="-L/github.com/sRRRs-7/Go_Algorithm.git/lib -lmecab -lstdc++"
+	export CGO_CFLAGS="-I/github.com/sRRRs-7/Go_Algorithm.git/include"
+	go get github.com/bluele/mecab-golang
