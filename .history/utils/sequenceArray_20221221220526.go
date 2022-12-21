@@ -9,7 +9,7 @@ func SequenceArray() {
 	res := sequenceArray(min, max)
 	fmt.Printf("%d \n", res)
 
-	res = sameValueArray(max, 7)
+	res = sameValueArray(max)
 	fmt.Printf("%d \n", res)
 }
 

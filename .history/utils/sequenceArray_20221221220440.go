@@ -9,7 +9,7 @@ func SequenceArray() {
 	res := sequenceArray(min, max)
 	fmt.Printf("%d \n", res)
 
-	res = sameValueArray(max, 7)
+	res = sameValueArray(max)
 	fmt.Printf("%d \n", res)
 }
 
@@ -21,7 +21,7 @@ func sequenceArray(min, max int) []int {
 	return a
 }
 
-func sameValueArray(num, v int) []int {
+func sameValueArray[int | string](num, v int) []int {
 	a := make([]int, num)
 	for i := range a {
 		a[i] = v
