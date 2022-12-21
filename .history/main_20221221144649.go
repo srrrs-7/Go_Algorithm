@@ -51,10 +51,10 @@ func main() {
 	utils.Contains()
 	utils.Cipher()
 	utils.ConvertBase64()
-	utils.Aes()
 	if is_io {
 		utils.Io() // if you execute this function, is_io change true
 	}
+	utils.Aes()
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 	// regex
