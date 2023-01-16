@@ -1,13 +1,10 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/sRRRs-7/Go_Algorithm.git/algorithm"
-	"github.com/sRRRs-7/Go_Algorithm.git/atCorder"
-	"github.com/sRRRs-7/Go_Algorithm.git/hebon"
+	atCoder "github.com/sRRRs-7/Go_Algorithm.git/atCorder"
+	"github.com/sRRRs-7/Go_Algorithm.git/codility"
 	"github.com/sRRRs-7/Go_Algorithm.git/leetcode"
-	"github.com/sRRRs-7/Go_Algorithm.git/mecab"
 	"github.com/sRRRs-7/Go_Algorithm.git/regex"
 	analyzer "github.com/sRRRs-7/Go_Algorithm.git/staticAnalizer"
 	"github.com/sRRRs-7/Go_Algorithm.git/utils"
@@ -17,12 +14,6 @@ const is_io = false
 const is_leet = false
 
 func main() {
-	// algorithm
-	algorithm.BinarySearch()
-	algorithm.EuclidMethod()
-	algorithm.MergeSort()
-	algorithm.Distinct()
-	algorithm.AddArray()
 	// leetcode
 	leetcode.ReverseWords()
 	leetcode.SelfCrossing()
@@ -37,12 +28,12 @@ func main() {
 	leetcode.LongestPrefix()
 	leetcode.MKAve()
 	//atCorder
+	atCoder.Parenthesis()
+	atCoder.GridMath()
+	atCoder.Dp()
 	if is_leet {
-		atCorder.CutCake()
+		atCoder.CutCake()
 	}
-	atCorder.Parenthesis()
-	atCorder.GridMath()
-	atCorder.Dp()
 	// utils
 	utils.BaseNumberConvert()
 	utils.ArrayToInteger()
@@ -61,8 +52,20 @@ func main() {
 	// regex
 	regex.RegexFunc()
 	// language processing
-	mecab.NewMecab("こんにちは")
-	hebon := hebon.ToHebon("こんにちは")
-	fmt.Println(hebon)
-
+	// mecab.NewMecab("こんにちは")
+	// hebon := hebon.ToHebon("こんにちは")
+	// fmt.Println(hebon)
+	// algorithm
+	algorithm.EuclidMethod()
+	algorithm.MergeSort()
+	algorithm.Distinct()
+	algorithm.AddArray()
+	algorithm.BinarySearch()
+	algorithm.SortAlgo()
+	algorithm.QuickSort()
+	// codility
+	codility.Demo()
+	codility.BinaryGap()
+	codility.CyclicRotation()
+	codility.OddOccurrenceInArray()
 }
