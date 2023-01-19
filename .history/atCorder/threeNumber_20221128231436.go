@@ -1,3 +1,0 @@
-package atCorder
-
-func ThreeNumber() {}

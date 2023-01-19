@@ -21,16 +21,3 @@ func sequenceArray(A []int) int {
 	}
 	return uniq[len(uniq)-1] + 1
 }
-
-func distinct(arr []int) (unique []int) {
-	list := make(map[int]bool, len(arr)-1)
-
-	for _, v := range arr {
-		if !list[v] {
-			list[v] = true
-			unique = append(unique, v)
-		}
-	}
-
-	return unique
-}

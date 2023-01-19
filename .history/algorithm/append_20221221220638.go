@@ -1,3 +1,0 @@
-package algorithm
-
-func AddArray() {}

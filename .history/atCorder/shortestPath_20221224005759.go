@@ -1,3 +1,0 @@
-package atCoder
-
-func ShortestPath() {}
