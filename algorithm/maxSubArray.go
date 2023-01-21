@@ -13,16 +13,9 @@ func maxSubArray(arr []int) int {
 	maxSum := arr[0]
 
 	for i := 1; i < len(arr); i++ {
-		curSum = max(curSum+arr[i], arr[i])
-		maxSum = max(curSum, maxSum)
+		curSum = maxInt(curSum+arr[i], arr[i])
+		maxSum = maxInt(curSum, maxSum)
 	}
 
 	return maxSum
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
 }

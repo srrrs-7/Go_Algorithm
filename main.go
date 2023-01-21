@@ -91,4 +91,8 @@ func main() {
 	codility.Nested()
 	codility.StoneWall()
 	codility.Dominator()
+	codility.EqualReader()
+	codility.MaxProfit()
+	codility.MaxSliceSum()
+	codility.Flags()
 }

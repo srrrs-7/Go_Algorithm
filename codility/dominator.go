@@ -2,7 +2,6 @@ package codility
 
 import (
 	"fmt"
-	"sort"
 )
 
 func Dominator() {
@@ -12,31 +11,16 @@ func Dominator() {
 }
 
 func dominator(A []int) int {
-	if len(A) == 0 {
-		return -1
-	}
-	list := make(map[int]int, 0)
-	for _, v := range A {
-		list[v] += 1
-	}
-
-	var key, cnt int
-	for k, v := range list {
-		if key < v {
-			key = k
-			cnt = v
+	persons := make(map[int]int)
+	maxCount := len(A) / 2
+	dominator := -1
+	for i, a := range A {
+		persons[a] = persons[a] + 1
+		if persons[a] > maxCount {
+			maxCount = persons[a]
+			dominator = i
 		}
-	}
 
-	if cnt < len(A)/2 {
-		return -1
 	}
-
-	for k, v := range list {
-		if k != key && v == cnt {
-			return -1
-		}
-	}
-
-	return sort.SearchInts(A, key)
+	return dominator
 }
