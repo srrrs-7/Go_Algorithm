@@ -7,6 +7,7 @@ import (
 	"github.com/sRRRs-7/Go_Algorithm.git/leetcode"
 	"github.com/sRRRs-7/Go_Algorithm.git/regex"
 	analyzer "github.com/sRRRs-7/Go_Algorithm.git/staticAnalizer"
+	"github.com/sRRRs-7/Go_Algorithm.git/test"
 	"github.com/sRRRs-7/Go_Algorithm.git/utils"
 )
 
@@ -67,6 +68,9 @@ func main() {
 	algorithm.SequenceArray()
 	algorithm.PrefixSum()
 	algorithm.Sum()
+	algorithm.BinaryTreeMain()
+	algorithm.MaxMinArray()
+	algorithm.Fibonacci()
 	// codility
 	codility.Demo()
 	codility.BinaryGap()
@@ -95,4 +99,9 @@ func main() {
 	codility.MaxProfit()
 	codility.MaxSliceSum()
 	codility.Flags()
+	// codility test
+	test.Solution3()
+	test.Solution4()
+	test.Solution5()
+	test.Solution6()
 }

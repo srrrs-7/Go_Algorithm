@@ -7,13 +7,6 @@ func maxInt(a, b int) int {
 	return b
 }
 
-func mix(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
 func Solution(A []int) int {
 	min := A[0]
 	max := A[0]
