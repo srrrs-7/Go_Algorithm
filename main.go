@@ -15,19 +15,6 @@ const is_io = false
 const is_leet = false
 
 func main() {
-	// leetcode
-	leetcode.ReverseWords()
-	leetcode.SelfCrossing()
-	leetcode.AggregateComponent()
-	leetcode.TotalAppealString()
-	leetcode.GroupOfStrings()
-	leetcode.CountIdealArray()
-	leetcode.MinimumCostAve()
-	leetcode.SubSequence()
-	leetcode.MatchStr()
-	leetcode.MaxDot()
-	leetcode.LongestPrefix()
-	leetcode.MKAve()
 	//atCorder
 	atCoder.Parenthesis()
 	atCoder.GridMath()
@@ -71,6 +58,7 @@ func main() {
 	algorithm.BinaryTreeMain()
 	algorithm.MaxMinArray()
 	algorithm.Fibonacci()
+	algorithm.Insert()
 	// codility
 	codility.Demo()
 	codility.BinaryGap()
@@ -104,4 +92,19 @@ func main() {
 	test.Solution4()
 	test.Solution5()
 	test.Solution6()
+	// leetcode
+	leetcode.ReverseWords()
+	leetcode.SelfCrossing()
+	leetcode.AggregateComponent()
+	leetcode.TotalAppealString()
+	leetcode.GroupOfStrings()
+	leetcode.CountIdealArray()
+	leetcode.MinimumCostAve()
+	leetcode.SubSequence()
+	leetcode.MatchStr()
+	leetcode.MaxDot()
+	leetcode.LongestPrefix()
+	leetcode.MKAve()
+	leetcode.SubString()
+	leetcode.ReverseString()
 }
