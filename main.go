@@ -107,4 +107,6 @@ func main() {
 	leetcode.MKAve()
 	leetcode.SubString()
 	leetcode.ReverseString()
+	leetcode.RotateArray()
+	leetcode.BackTrack()
 }
