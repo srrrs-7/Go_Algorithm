@@ -110,4 +110,5 @@ func main() {
 	leetcode.RotateArray()
 	leetcode.BackTrack()
 	leetcode.Subset()
+	leetcode.SingleAndTwice()
 }
