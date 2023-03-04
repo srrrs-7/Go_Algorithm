@@ -3,7 +3,7 @@ package leetcode
 import "fmt"
 
 func SingleAndTwice() {
-	arr := []int{1,1,2,2,3,3,5,5,8,8,9}
+	arr := []int{1, 1, 2, 2, 3, 3, 5, 5, 8, 8, 9}
 	res := singleAndTwice(arr)
 	fmt.Println(res)
 }
@@ -16,7 +16,7 @@ func singleAndTwice(nums []int) int {
 		// middle index -> if mid == even -> single int is right side exist
 		mid := l + (r-l)/2
 		// odd -> mid - 1
-		if mid % 2 == 1 {
+		if mid%2 == 1 {
 			mid--
 		}
 		// check duplicate

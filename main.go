@@ -35,6 +35,7 @@ func main() {
 	if is_io {
 		utils.Io() // if you execute this function, is_io change true
 	}
+	utils.ParentChild()
 	// staticAnalyzer
 	analyzer.StaticAnalyzer()
 	// regex
